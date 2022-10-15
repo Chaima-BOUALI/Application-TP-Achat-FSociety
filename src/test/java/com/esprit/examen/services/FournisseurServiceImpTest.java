@@ -49,7 +49,7 @@ public class FournisseurServiceImpTest {
 		
 		fourinsseurService.deleteFournisseur(fournisseur.getIdFournisseur()) ;
 	}
-	@Test
+	/*@Test
 	public void testDeleteFournisseur() throws ParseException {
 		
 		Set<Facture> facture = new HashSet<>();
@@ -73,5 +73,5 @@ public class FournisseurServiceImpTest {
 		assertEquals(expected + 1, fourinsseurService.retrieveAllFournisseurs().size());
 		fourinsseurService.deleteFournisseur(fournisseur.getIdFournisseur());
 
-	}
+	}*/
 }
