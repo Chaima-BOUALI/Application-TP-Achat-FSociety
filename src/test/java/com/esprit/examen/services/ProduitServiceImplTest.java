@@ -64,7 +64,7 @@ public class ProduitServiceImplTest {
 	}*/
 	
 	
-	@Test
+/*	@Test
 	public void testAssignProduitToStock() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -75,8 +75,8 @@ public class ProduitServiceImplTest {
 		log.info("Stock: "+savedStock);
 		log.info("Produit: "+produit);
 		produitService.assignProduitToStock(produit.getIdProduit(), savedStock.getIdStock());
-		/*assertNotNull(produit.getStock());
-		stockService.deleteStock(savedStock.getIdStock());*/
+		//assertNotNull(produit.getStock());
+		//stockService.deleteStock(savedStock.getIdStock());
 		produitService.deleteProduit(produit.getIdProduit());
-	}
+	}*/
 }
