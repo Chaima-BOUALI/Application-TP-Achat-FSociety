@@ -37,6 +37,8 @@ public class ProduitServiceImplTest {
 		assertNotNull(produit.getIdProduit());
 		assertTrue(produit.getCodeProduit().length() > 0);
 		produitService.deleteProduit(produit.getIdProduit());
+		log.info("Product added successfully");
+		
 	}
 	
 	/*@Test
@@ -48,6 +50,8 @@ public class ProduitServiceImplTest {
 		Produit produit = produitService.addProduit(p);
 		produitService.deleteProduit(produit.getIdProduit());
 		assertNull(produitService.retrieveProduit(produit.getIdProduit()));
+				log.info("Product deleted successfully");
+
 	}*/
 	
 /*@Test
@@ -61,6 +65,8 @@ public class ProduitServiceImplTest {
 		Produit produit = produitService.addProduit(p);
 		assertEquals(expected + 1, produitService.retrieveAllProduits().size());
 		produitService.deleteProduit(produit.getIdProduit());
+				log.info("Product retrieved successfully");
+
 	}*/
 	
 	
@@ -78,5 +84,7 @@ public class ProduitServiceImplTest {
 		//assertNotNull(produit.getStock());
 		//stockService.deleteStock(savedStock.getIdStock());
 		produitService.deleteProduit(produit.getIdProduit());
+	     log.info("Product assigned to stock successfully");
+
 	}*/
 }

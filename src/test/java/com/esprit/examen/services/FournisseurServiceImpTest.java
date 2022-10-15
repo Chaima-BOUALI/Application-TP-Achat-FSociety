@@ -32,31 +32,31 @@ public class FournisseurServiceImpTest {
 	@Autowired
 	IFournisseurService fourinsseurService;
 	
-	
-	
-	@Test
+	/*@Test
 	public void testAddFournisseur() throws ParseException {
-
 		Set<Facture> facture = new HashSet<>();
 		Set<SecteurActivite> SecteurActivite = new HashSet<>();
 		DetailFournisseur d = new DetailFournisseur() ;
-		Fournisseur f = new Fournisseur( 1000L , "aa", "aa",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
+		Fournisseur f = new Fournisseur( 1000L , "cc", "cc",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
 		Fournisseur fournisseur = fourinsseurService.addFournisseur(f) ;
-		System.out.print("Fournisseur: "+fournisseur);
+		log.info("Fournisseur: "+fournisseur);
 		assertNotNull(fournisseur.getIdFournisseur());
-		
-		fourinsseurService.deleteFournisseur(fournisseur.getIdFournisseur()) ;
-	}
+		//fourinsseurService.deleteFournisseur(f.getIdFournisseur());
+
+	}*/
+	
 	/*@Test
 	public void testDeleteFournisseur() throws ParseException {
 		
 		Set<Facture> facture = new HashSet<>();
 		Set<SecteurActivite> SecteurActivite = new HashSet<>();
 		DetailFournisseur d = new DetailFournisseur() ;
-		Fournisseur f = new Fournisseur( 1000L , "aa", "aa",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
+		Fournisseur f = new Fournisseur( 1000L , "cc", "cc",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
 		Fournisseur fournisseur = fourinsseurService.addFournisseur(f) ;
-		assertNull(fourinsseurService.retrieveAllFournisseurs());
-	}
+		assertNull(fourinsseurService.retrieveFournisseur(f.getIdFournisseur()));
+		//fourinsseurService.deleteFournisseur(f.getIdFournisseur());
+
+	}*/
 	
 	@Test
 	public void testRetrieveAllFournisseur() throws ParseException {
@@ -66,10 +66,10 @@ public class FournisseurServiceImpTest {
 		Set<Facture> facture = new HashSet<>();
 		Set<SecteurActivite> SecteurActivite = new HashSet<>();
 		DetailFournisseur d = new DetailFournisseur() ;
-		Fournisseur f = new Fournisseur( 1000L , "aa", "aa",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
+		Fournisseur f = new Fournisseur( 1000L , "cc", "cc",CategorieFournisseur.ORDINAIRE, facture, SecteurActivite, d);
 		Fournisseur fournisseur = fourinsseurService.addFournisseur(f) ;
 		assertEquals(expected + 1, fourinsseurService.retrieveAllFournisseurs().size());
-		fourinsseurService.deleteFournisseur(fournisseur.getIdFournisseur());
+		//fourinsseurService.deleteFournisseur(fournisseur.getIdFournisseur());
 
-	}*/
+	}
 }
