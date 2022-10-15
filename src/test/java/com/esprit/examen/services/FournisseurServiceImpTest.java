@@ -1,22 +1,21 @@
 package com.esprit.examen.services;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
+import java.util.HashSet;
 import java.util.Set;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import lombok.extern.slf4j.Slf4j;
+
 
 import com.esprit.examen.entities.CategorieFournisseur;
 import com.esprit.examen.entities.DetailFournisseur;
@@ -25,7 +24,6 @@ import com.esprit.examen.entities.Fournisseur;
 import com.esprit.examen.entities.Produit;
 import com.esprit.examen.entities.SecteurActivite;
 
-import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
