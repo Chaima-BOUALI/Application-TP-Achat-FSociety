@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-DEVOPS-Pipeline-TPAchat
+FROM openjdk:8-jdk-pipelinetpachatfsociety
 EXPOSE 8083
-ADD target/DEVOPS-Pipeline-TPAchat.jar DEVOPS-Pipeline-TPAchat.jar
-ENTRYPOINT ["java","-jar","/docker-spring-boot.jar"]
+ADD target/pipelinetpachatfsociety.jar pipelinetpachatfsociety.jar
+ENTRYPOINT ["java","-jar","/pipelinetpachatfsociety.jar"]
