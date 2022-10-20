@@ -52,7 +52,7 @@ public class OperateurServiceImplTest {
 		log.info("Operator deleted successfully");
 	}*/
 	
-	@Test
+	/*@Test
 	public void testRetrieveAllOperateurs() throws ParseException {
 		
 		List<Operateur> Operateurs = operateurService.retrieveAllOperateurs();
@@ -64,6 +64,6 @@ public class OperateurServiceImplTest {
 		operateurService.deleteOperateur(operateur.getIdOperateur());
 		log.info("Operators retrieved successfully");
 
-	}
+	}*/
 
 }
