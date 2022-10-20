@@ -31,7 +31,7 @@ public class OperateurServiceImplTest {
 
 	@Autowired
 	IOperateurService operateurService; 
-	@Test
+	/*@Test
 	public void testAddOperator() throws ParseException {
 		Set<Facture> facture = new HashSet<>();
 		Operateur o = new Operateur(null, "Operator1", "Operator2", "pwd", facture);
