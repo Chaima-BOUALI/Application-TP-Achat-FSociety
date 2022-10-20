@@ -43,16 +43,16 @@ public class OperateurServiceImplTest {
 		log.info("Operator 	added successfully");
 
 	}
-	/*@Test
+	@Test
 	public void testDeleteOperator() throws ParseException {
 		Set<Facture> facture = new HashSet<>();
 		Operateur o = new Operateur(null, "Operator1", "Operator2", "pwd", facture);
 		Operateur operateur = operateurService.addOperateur(o);
 		operateurService.deleteOperateur(operateur.getIdOperateur());
 		log.info("Operator deleted successfully");
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testRetrieveAllOperateurs() throws ParseException {
 		
 		List<Operateur> Operateurs = operateurService.retrieveAllOperateurs();
@@ -64,6 +64,6 @@ public class OperateurServiceImplTest {
 		operateurService.deleteOperateur(operateur.getIdOperateur());
 		log.info("Operators retrieved successfully");
 
-	}*/
+	}
 
 }
