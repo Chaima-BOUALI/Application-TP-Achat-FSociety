@@ -27,7 +27,7 @@ public class ProduitServiceImplTest {
 	@Autowired
 	IStockService stockService;
 	
-	@Test
+/*	@Test
 	public void testAddProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -40,7 +40,7 @@ public class ProduitServiceImplTest {
 		log.info("Product added successfully");
 		
 	}
-	
+	*/
 	/*@Test
 	public void testDeleteProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
