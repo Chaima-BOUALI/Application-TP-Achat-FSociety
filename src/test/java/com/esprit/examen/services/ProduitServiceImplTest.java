@@ -27,7 +27,7 @@ public class ProduitServiceImplTest {
 	@Autowired
 	IStockService stockService;
 	
-/*	@Test
+@Test
 	public void testAddProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -40,8 +40,8 @@ public class ProduitServiceImplTest {
 		log.info("Product added successfully");
 		
 	}
-	*/
-	/*@Test
+
+	@Test
 	public void testDeleteProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -52,9 +52,9 @@ public class ProduitServiceImplTest {
 		assertNull(produitService.retrieveProduit(produit.getIdProduit()));
 				log.info("Product deleted successfully");
 
-	}*/
+	}
 	
-/*@Test
+@Test
 	public void testRetrieveAllProduits() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -67,10 +67,10 @@ public class ProduitServiceImplTest {
 		produitService.deleteProduit(produit.getIdProduit());
 				log.info("Product retrieved successfully");
 
-	}*/
+	}
 	
 	
-/*	@Test
+	@Test
 	public void testAssignProduitToStock() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -86,5 +86,5 @@ public class ProduitServiceImplTest {
 		produitService.deleteProduit(produit.getIdProduit());
 	     log.info("Product assigned to stock successfully");
 
-	}*/
+	}
 }
