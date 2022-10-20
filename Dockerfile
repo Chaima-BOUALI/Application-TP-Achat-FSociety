@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-pipelinetpachatfsociety
+FROM openjdk:8-jdk-alpine
 EXPOSE 8083
-ADD target/pipelinetpachatfsociety.jar pipelinetpachatfsociety.jar
-ENTRYPOINT ["java","-jar","/pipelinetpachatfsociety.jar"]
+ADD target/docker-spring-boot.jar docker-spring-boot.jar
+ENTRYPOINT ["java","-jar","/docker-spring-boot.jar"]
