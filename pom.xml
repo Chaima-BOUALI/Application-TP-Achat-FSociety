@@ -77,7 +77,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+		<id>deploymentRepo</id>
+		<name>NexusRepo</name>
+		<url>http://192.168.33.2:8081/nexus/content/repositories/snapshots/</url>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
