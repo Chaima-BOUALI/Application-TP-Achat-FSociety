@@ -24,15 +24,7 @@ pipeline {
         }
                 
 
-        stage("Building Project") {
-            steps {
-                script {
-                    // Since we are using Windows we should Use "bat" step
-                    // this step takes code and package it in its distributable format, such as a JAR
-                    bat "mvn package -DskipTests=true"
-                }
-            }
-        }
+
  stage('Build docker image') {
          steps{
              script{
@@ -51,6 +43,15 @@ pipeline {
          }
          
      }
+             stage("Building Project") {
+            steps {
+                script {
+                    // Since we are using Windows we should Use "bat" step
+                    // this step takes code and package it in its distributable format, such as a JAR
+                    bat "mvn package -DskipTests=true"
+                }
+            }
+        }
 
         stage("Cleaning Project") {
             steps {
