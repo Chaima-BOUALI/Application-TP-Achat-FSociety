@@ -25,7 +25,7 @@ pipeline {
                 stage("Docker Image Build") {
             steps {
                 script {
-                            sh'docker build -t chaymaboualy/tpAchatProject-1.0 .'      
+                            sh'docker build -t chaymaboualy/docker-spring-boot .'      
                        }
             }
         }
