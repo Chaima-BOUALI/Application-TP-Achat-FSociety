@@ -1,5 +1,8 @@
 pipeline {
     agent any
+   tools{
+        maven 'M2_HOME'
+    }
    
     environment {
         // This can work with nexus3 or nexus2
@@ -28,7 +31,7 @@ pipeline {
  stage('Build docker image') {
          steps{
              script{
-                 sh 'docker build -t chaymaboualy/docker-spring-boot .'
+                 sh 'docker build -t ChaymaBoualy/docker-spring-boot .'
              }
          }
      }
@@ -36,9 +39,9 @@ pipeline {
          steps{
              script{
                  withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                 sh 'docker login -u chaymaboualy -p ${dockerhubpwd}'
+                 sh 'docker login -u ChaymaBoualy -p ${dockerhubpwd}'
                 }
-                sh 'docker push chaymaboualy/docker-spring-boot'
+                sh 'docker push ChaymaBoualy/docker-spring-boot'
              }
          }
          
