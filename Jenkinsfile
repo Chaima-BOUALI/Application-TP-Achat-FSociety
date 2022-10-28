@@ -22,6 +22,13 @@ pipeline {
                      git branch: 'ChaymaBoualy', url: 'https://github.com/ChaymaBoualy/Application-TP-Achat-FSociety.git'                }
             }
         }
+                stage("Docker Image Build") {
+            steps {
+                script {
+                            sh'docker build -t chaymaboualy/tpAchatProject-1.0 .'      
+                       }
+            }
+        }
 
         stage("Building Project") {
             steps {
