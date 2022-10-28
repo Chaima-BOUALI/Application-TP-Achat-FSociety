@@ -22,13 +22,7 @@ pipeline {
                      git branch: 'ChaymaBoualy', url: 'https://github.com/ChaymaBoualy/Application-TP-Achat-FSociety.git'                }
             }
         }
-                stage("Docker Image Build") {
-            steps {
-                script {
-                            sh'docker build -t chaymaboualy/docker-spring-boot .'      
-                       }
-            }
-        }
+                
 
         stage("Building Project") {
             steps {
@@ -39,6 +33,24 @@ pipeline {
                 }
             }
         }
+ stage('Build docker image') {
+         steps{
+             script{
+                 sh 'docker build -t chaymaboualy/docker-spring-boot .'
+             }
+         }
+     }
+     stage('Push docker image'){
+         steps{
+             script{
+                 withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
+                 sh 'docker login -u chaymaboualy -p ${dockerhubpwd}'
+                }
+                sh 'docker push chaymaboualy/docker-spring-boot'
+             }
+         }
+         
+     }
 
         stage("Cleaning Project") {
             steps {
