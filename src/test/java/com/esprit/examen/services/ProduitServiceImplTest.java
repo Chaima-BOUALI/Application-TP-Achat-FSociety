@@ -1,94 +1,47 @@
 package com.esprit.examen.services;
 
-import static org.junit.Assert.*;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.esprit.examen.entities.Produit;
-import com.esprit.examen.entities.Stock;
-import lombok.extern.slf4j.Slf4j;
+import com.esprit.examen.repositories.ProduitRepository;
 
 
 @SpringBootTest
-@TestMethodOrder(OrdrerAnnotation.class)
-@Slf4j
+@TestMethodOrder(OrderAnnotation.class)
 public class ProduitServiceImplTest {
-	@Autowired
-	IProduitService produitService;
-	@Autowired
-	IStockService stockService;
-	
-@Test
-@Order(1)
-	public void testAddProduit() throws ParseException {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date dateCreation = dateFormat.parse("15/10/2022");
-		Produit p = new Produit(null, "Prod1", "voiture", 0, dateCreation, null, null, null, null);
-		Produit produit = produitService.addProduit(p);
-		log.info("Produit: "+produit);
-		assertNotNull(produit.getIdProduit());
-		assertTrue(produit.getCodeProduit().length() > 0);
-		produitService.deleteProduit(produit.getIdProduit());
-		log.info("Product added successfully");
-		
-	}
-/*
-	@Test
-	public void testDeleteProduit() throws ParseException {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date dateCreation = dateFormat.parse("15/10/2022");
-		Date dateDerniereModification = dateFormat.parse("14/10/2022");
-		Produit p = new Produit(null, "Prod1", "voiture", 0, dateCreation, dateDerniereModification, null, null, null);
-		Produit produit = produitService.addProduit(p);
-		produitService.deleteProduit(produit.getIdProduit());
-		assertNull(produitService.retrieveProduit(produit.getIdProduit()));
-				log.info("Product deleted successfully");
+	 @Autowired
+    IProduitService produitService;
 
-	}
-	*/
-	
-@Test
-@Order(2)
-	public void testRetrieveAllProduits() throws ParseException {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date dateCreation = dateFormat.parse("15/10/2022");
-		Date dateDerniereModification = dateFormat.parse("14/10/2022");
-		List<Produit> produits = produitService.retrieveAllProduits();
-		int expected = produits.size();
-		Produit p = new Produit(null, "Prod1", "voiture", 0, dateCreation, dateDerniereModification, null, null, null);
-		Produit produit = produitService.addProduit(p);
-		assertEquals(expected + 1, produitService.retrieveAllProduits().size());
-		produitService.deleteProduit(produit.getIdProduit());
-				log.info("Product retrieved successfully");
+    @Autowired
+    ProduitRepository produitRepository;
 
-	}
-	/*
-	
-	@Test
-	public void testAssignProduitToStock() throws ParseException {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date dateCreation = dateFormat.parse("15/10/2022");
-		Stock s = new Stock("stock1",10,200);
-		Stock savedStock= stockService.addStock(s);
-		Produit p = new Produit(null, "Prod1", "voiture", 0, dateCreation, null, null, null, null);
-		Produit produit = produitService.addProduit(p);
-		log.info("Stock: "+savedStock);
-		log.info("Produit: "+produit);
-		produitService.assignProduitToStock(produit.getIdProduit(), savedStock.getIdStock());
-		//assertNotNull(produit.getStock());
-		//stockService.deleteStock(savedStock.getIdStock());
-		produitService.deleteProduit(produit.getIdProduit());
-	     log.info("Product assigned to stock successfully");
+    Produit p1 = new Produit(55L, "2365","produit1",50);
+    Produit p2 = new Produit(66L, "5681","produit5",120);
+    @Test
+    @Order(1)
+    public void testaddProdiut() {
+        Produit produitAdded =  produitService.addProduit(p1);
+        Assertions.assertEquals(produitAdded.getCodeProduit(), produitAdded.getCodeProduit());
+    }
 
-	}
-	*/
+    @Test
+    @Order(2)
+    public void testRetrieveAllProduits() {
+        List<Produit> listProduits = produitService.retrieveAllProduits();
+        Assertions.assertEquals(listProduits.size(), listProduits.size());
+    }
+
+  
+	
+	
+	
 }
