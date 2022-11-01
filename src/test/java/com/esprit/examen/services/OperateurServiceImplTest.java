@@ -11,20 +11,19 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.junit.jupiter.api.ClassOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import com.esprit.examen.entities.Facture;
 import com.esprit.examen.entities.Operateur;
 import com.esprit.examen.entities.Produit;
 
 import lombok.extern.slf4j.Slf4j;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
 public class OperateurServiceImplTest {
@@ -52,7 +51,7 @@ public class OperateurServiceImplTest {
 		log.info("Operator deleted successfully");
 	}
 	
-/*	@Test
+	@Test
 	public void testRetrieveAllOperateurs() throws ParseException {
 		
 		List<Operateur> Operateurs = operateurService.retrieveAllOperateurs();
@@ -64,6 +63,6 @@ public class OperateurServiceImplTest {
 		operateurService.deleteOperateur(operateur.getIdOperateur());
 		log.info("Operators retrieved successfully");
 
-	}*/
+	}
 
 }
