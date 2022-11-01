@@ -12,7 +12,7 @@ services:
       MYSQL_DATABASE: 'tpachato'
     ports:
       - target: 3306
-        published: 3306
+        published: 3307
         protocol: tcp #Forwars the exposed port 3306 on the container to port 3306 on the host machine
     volumes:
       - /home/mysql/data:/home/vagrant/mysql:rw
