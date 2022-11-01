@@ -40,7 +40,7 @@ public class ProduitServiceImplTest {
 		log.info("Product added successfully");
 		
 	}
-
+/*
 	@Test
 	public void testDeleteProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -53,6 +53,7 @@ public class ProduitServiceImplTest {
 				log.info("Product deleted successfully");
 
 	}
+	*/
 	
 @Test
 	public void testRetrieveAllProduits() throws ParseException {
@@ -68,7 +69,7 @@ public class ProduitServiceImplTest {
 				log.info("Product retrieved successfully");
 
 	}
-	
+	/*
 	
 	@Test
 	public void testAssignProduitToStock() throws ParseException {
@@ -87,4 +88,5 @@ public class ProduitServiceImplTest {
 	     log.info("Product assigned to stock successfully");
 
 	}
+	*/
 }
