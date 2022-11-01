@@ -1,4 +1,4 @@
-/*package com.esprit.examen.services;
+package com.esprit.examen.services;
 
 import static org.junit.Assert.*;
 
@@ -27,7 +27,7 @@ public class ProduitServiceImplTest {
 	@Autowired
 	IStockService stockService;
 	
-/*@Test
+@Test
 	public void testAddProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -87,4 +87,4 @@ public class ProduitServiceImplTest {
 	     log.info("Product assigned to stock successfully");
 
 	}
-}*/
+}
