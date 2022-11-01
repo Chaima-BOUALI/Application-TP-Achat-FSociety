@@ -18,8 +18,8 @@ import com.esprit.examen.entities.Stock;
 import lombok.extern.slf4j.Slf4j;
 
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
+@TestMethodOrder(OrdrerAnnotation.class)
 @Slf4j
 public class ProduitServiceImplTest {
 	@Autowired
@@ -28,6 +28,7 @@ public class ProduitServiceImplTest {
 	IStockService stockService;
 	
 @Test
+@Order(1)
 	public void testAddProduit() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
@@ -56,6 +57,7 @@ public class ProduitServiceImplTest {
 	*/
 	
 @Test
+@Order(2)
 	public void testRetrieveAllProduits() throws ParseException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dateCreation = dateFormat.parse("15/10/2022");
