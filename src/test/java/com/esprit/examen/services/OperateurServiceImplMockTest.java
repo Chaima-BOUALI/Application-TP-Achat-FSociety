@@ -47,7 +47,7 @@ public class OperateurServiceImplMockTest {
 	            add(new Operateur(20L, "N2","P2","22",null));
 	        }
 	    };
-
+///
 	    @Test
 	    public void retrieveOperateur() {
 	        System.out.println("retrieveOperateurs");
