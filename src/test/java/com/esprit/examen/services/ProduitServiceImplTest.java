@@ -10,8 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.esprit.examen.entities.Produit;
 import com.esprit.examen.repositories.ProduitRepository;
 
-
-
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 public class ProduitServiceImplTest {
