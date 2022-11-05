@@ -1,17 +1,14 @@
 pipeline {
     agent any
     
-    environment {
-        DOCKERHUB_CREDENTIALS=credentials('dockerhub')
-    }
 
     stages {
         stage("git pull"){
             steps{
               
                 git branch: 'stockBack', 
-                credentialsId: 'aaa0f99c-1c15-4fce-b119-222d2b7d1a2a', 
-                url: 'https://github.com/nesrinehm1996/magasinBack.git'
+                credentialsId: '91ccda11-c578-4756-b7a8-d912db0bed6d', 
+                url: 'https://github.com/ChaymaBoualy/Application-TP-Achat-FSociety.git'
                     
                 }
                 
@@ -63,37 +60,11 @@ pipeline {
       //    }
 
     //   }
-        stage("Building image") {
-            steps {
-                sh 'docker build -t nourhengh01/achat-project .'
-            }
-        }
-        stage('Docker Login') {
-
-			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
-			}
-		} 
-        stage('Push') {
-
-			steps {
-				sh 'docker push nourhengh01/achat-project'
-			}
-	}
-	stage('deploy docker-compose'){
-            steps{
-                script{
-                    sh 'docker-compose up -d'
-                }
-            }
        
-        }    
+        
+        
 	
        
     }
-	post {
-		always {
-			sh 'docker logout'
-		}
-	}
+	
 } 
