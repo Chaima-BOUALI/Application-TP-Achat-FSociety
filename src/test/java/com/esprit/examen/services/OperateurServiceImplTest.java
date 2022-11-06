@@ -1,4 +1,6 @@
-package com.esprit.examen.services;
+/*
+ package com.esprit.examen.services;
+ 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -50,7 +52,7 @@ public class OperateurServiceImplTest {
 		Operateur operateur = operateurService.addOperateur(o);
 		operateurService.deleteOperateur(operateur.getIdOperateur());
 		log.info("Operator deleted successfully");
-	}*/
+	}
 	
 	@Test
 	public void testRetrieveAllOperateurs() throws ParseException {
@@ -67,3 +69,4 @@ public class OperateurServiceImplTest {
 	}
 
 }
+*/

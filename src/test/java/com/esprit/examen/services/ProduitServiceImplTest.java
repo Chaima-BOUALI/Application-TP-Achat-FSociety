@@ -1,3 +1,4 @@
+/*
 package com.esprit.examen.services;
 
 import static org.junit.Assert.*;
@@ -87,4 +88,6 @@ public class ProduitServiceImplTest {
 	     log.info("Product assigned to stock successfully");
 
 	}*/
+/*
 }
+*/
