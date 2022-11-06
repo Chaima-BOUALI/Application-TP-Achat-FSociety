@@ -22,7 +22,7 @@ services:
      - /home/mysql/data:/var/lib/mysql --user 1000
 
   spring_app:
-   image: flawnrayen/achatapp_testt
+   image: khaledsaidi1/achatapp_testt
    container_name: achatapp_test
    ports:
     - 8089:8089
