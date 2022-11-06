@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Produit;
 import com.esprit.examen.repositories.FactureRepository;
 
 @SpringBootTest
