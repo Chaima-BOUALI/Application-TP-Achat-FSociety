@@ -23,6 +23,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SpringFoxSwaggerConfig {
 
 	
+	
 	public static final String AUTHORIZATION_HEADER = "Authorization";
 	@Bean
 	public Docket api() {
