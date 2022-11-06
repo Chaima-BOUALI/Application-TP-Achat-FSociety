@@ -11,7 +11,8 @@ import com.esprit.examen.repositories.CategorieProduitRepository;
 public class CategorieProduitServiceImpl implements ICategorieProduitService {
 
 	
-	@Autowired
+	
+	@Autowired(required=true)
 	CategorieProduitRepository categorieProduitRepository;
 	@Override
 	public List<CategorieProduit> retrieveAllCategorieProduits() {
