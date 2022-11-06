@@ -39,7 +39,14 @@ public class FactureServiceMockTest {
         }
     };
 
-
+    @Test
+    public void testaddFacture(){
+        Mockito.when(facRepository.save(f1)).thenReturn(f1);
+        Facture facture1 = facService.addFacture(f1);
+        //assertNotNull(produit1);
+        Mockito.verify(facRepository, times(1)).save(Mockito.any(Facture.class));
+        System.out.println("3");
+    }
 
     @Test
     public void testRetrieveFacture() {
@@ -59,13 +66,6 @@ public class FactureServiceMockTest {
         //assertEquals(produit1.getIdProduit(),55L);
         System.out.println("2555");
     }
-    @Test
-    public void testaddFacture(){
-        Mockito.when(facRepository.save(f1)).thenReturn(f1);
-        Facture facture1 = facService.addFacture(f1);
-        //assertNotNull(produit1);
-        Mockito.verify(facRepository, times(1)).save(Mockito.any(Facture.class));
-        System.out.println("3");
-    }
+   
 
 }
