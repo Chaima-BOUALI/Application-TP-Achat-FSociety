@@ -27,7 +27,7 @@ pipeline {
   
 	  stage("Building image") {
             steps {
-                sh 'docker build -t dhafer01/project-achat .'
+                sh 'docker build -t project-achat .'
             }
         }
 	    stage('pushing Image'){
