@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tn.esprit.rh.achat.StockServiceImplTest" time="178.743" tests="4" errors="4" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tn.esprit.rh.achat.StockServiceImplTest" time="181.151" tests="4" errors="4" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.3.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,7 +59,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="retrieveAllStocksTest" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0">
+  <testcase name="retrieveAllStocksTest" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0.002">
     <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
@@ -70,12 +70,12 @@ Communications link failure
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 Caused by: java.net.ConnectException: Connection timed out: no further information
 </error>
-    <system-out><![CDATA[2022-11-06 23:46:01 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.rh.achat.StockServiceImplTest], using SpringBootContextLoader
-2022-11-06 23:46:01 - INFO  - o.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [tn.esprit.rh.achat.StockServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-11-06 23:46:01 - INFO  - o.s.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [tn.esprit.rh.achat.StockServiceImplTest]: StockServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-11-06 23:46:01 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration tn.esprit.rh.achat.AchatApplication for test class tn.esprit.rh.achat.StockServiceImplTest
-2022-11-06 23:46:01 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2022-11-06 23:46:01 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@653e4e4b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@94fab8f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@76c5d43c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11c093dd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@69bcbb8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72fc0b37, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ac05560, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f8b759e, org.springframework.test.context.event.EventPublishingTestExecutionListener@6795bfdc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75a2b5aa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5de1852b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39a22c8c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73831f3b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13ecfb04, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4275ec8f]
+    <system-out><![CDATA[2022-11-07 01:44:28 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.rh.achat.StockServiceImplTest], using SpringBootContextLoader
+2022-11-07 01:44:28 - INFO  - o.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [tn.esprit.rh.achat.StockServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-11-07 01:44:28 - INFO  - o.s.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [tn.esprit.rh.achat.StockServiceImplTest]: StockServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-11-07 01:44:28 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration tn.esprit.rh.achat.AchatApplication for test class tn.esprit.rh.achat.StockServiceImplTest
+2022-11-07 01:44:28 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-11-07 01:44:28 - INFO  - o.s.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5de1852b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39a22c8c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@73831f3b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@13ecfb04, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4275ec8f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a9b6e01, org.springframework.test.context.transaction.TransactionalTestExecutionListener@18adeae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75ca3140, org.springframework.test.context.event.EventPublishingTestExecutionListener@1836bae2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@296c2483, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7e44f0ae, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a208e17, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77ecce1b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3fecb459, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6674f28a]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -85,13 +85,13 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.3)
 
-2022-11-06 23:46:01 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 2972 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
-2022-11-06 23:46:01 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
-2022-11-06 23:46:01 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 23:46:01 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 10 JPA repository interfaces.
-2022-11-06 23:46:01 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 23:46:01 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-2022-11-06 23:46:23 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Exception during pool initialization.
+2022-11-07 01:44:29 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 9960 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
+2022-11-07 01:44:29 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
+2022-11-07 01:44:29 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-07 01:44:29 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 10 JPA repository interfaces.
+2022-11-07 01:44:29 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 01:44:29 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2022-11-07 01:44:51 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -194,7 +194,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:46:23 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+2022-11-07 01:44:51 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -297,9 +297,9 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:46:23 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-06 23:46:23 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-2022-11-06 23:46:45 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Exception during pool initialization.
+2022-11-07 01:44:51 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-07 01:44:51 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2022-11-07 01:45:13 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -401,16 +401,16 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:46:45 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
-2022-11-06 23:46:45 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
+2022-11-07 01:45:13 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2022-11-07 01:45:13 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2022-11-06 23:46:45 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:46:45 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:46:45 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
+2022-11-07 01:45:13 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:45:13 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:45:13 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-11-06 23:46:45 - ERROR - org.springframework.boot.SpringApplication - Application run failed
+2022-11-07 01:45:13 - ERROR - org.springframework.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.9.jar:5.3.9]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
@@ -525,7 +525,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:46:45 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@653e4e4b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@7bc40c88]
+2022-11-07 01:45:13 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5de1852b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@3c422742]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.9.jar:5.3.9]
@@ -665,13 +665,13 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.3)
 
-2022-11-06 23:46:45 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 2972 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
-2022-11-06 23:46:45 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
-2022-11-06 23:46:46 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 23:46:46 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 10 JPA repository interfaces.
-2022-11-06 23:46:46 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 23:46:46 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-2022-11-06 23:47:08 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Exception during pool initialization.
+2022-11-07 01:45:13 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 9960 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
+2022-11-07 01:45:13 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
+2022-11-07 01:45:14 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-07 01:45:14 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 10 JPA repository interfaces.
+2022-11-07 01:45:14 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 01:45:14 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2022-11-07 01:45:36 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -774,7 +774,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:47:08 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+2022-11-07 01:45:36 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -877,9 +877,9 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:47:08 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-06 23:47:08 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-2022-11-06 23:47:30 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Exception during pool initialization.
+2022-11-07 01:45:36 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-07 01:45:36 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2022-11-07 01:45:58 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -981,16 +981,16 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:47:30 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
-2022-11-06 23:47:30 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
+2022-11-07 01:45:58 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2022-11-07 01:45:58 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2022-11-06 23:47:30 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:47:30 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:47:30 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
+2022-11-07 01:45:58 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:45:58 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:45:58 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-11-06 23:47:30 - ERROR - org.springframework.boot.SpringApplication - Application run failed
+2022-11-07 01:45:58 - ERROR - org.springframework.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.9.jar:5.3.9]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
@@ -1105,7 +1105,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:47:30 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@653e4e4b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@2b648069]
+2022-11-07 01:45:58 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5de1852b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@c564e31]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.9.jar:5.3.9]
@@ -1225,7 +1225,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	... 82 common frames omitted
 ]]></system-out>
   </testcase>
-  <testcase name="testAddStock" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0">
+  <testcase name="testAddStock" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0.009">
     <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
@@ -1245,13 +1245,13 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.3)
 
-2022-11-06 23:47:30 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 2972 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
-2022-11-06 23:47:30 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
-2022-11-06 23:47:30 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 23:47:30 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 10 JPA repository interfaces.
-2022-11-06 23:47:31 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 23:47:31 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-2022-11-06 23:47:53 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Exception during pool initialization.
+2022-11-07 01:45:58 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 9960 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
+2022-11-07 01:45:58 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
+2022-11-07 01:45:59 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-07 01:45:59 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 10 JPA repository interfaces.
+2022-11-07 01:45:59 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 01:45:59 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2022-11-07 01:46:21 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1354,7 +1354,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:47:53 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+2022-11-07 01:46:21 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1457,9 +1457,9 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:47:53 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-06 23:47:53 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-2022-11-06 23:48:15 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Exception during pool initialization.
+2022-11-07 01:46:21 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-07 01:46:21 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2022-11-07 01:46:43 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1561,16 +1561,16 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:48:15 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
-2022-11-06 23:48:15 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
+2022-11-07 01:46:43 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2022-11-07 01:46:43 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2022-11-06 23:48:15 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:48:15 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:48:15 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
+2022-11-07 01:46:43 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:46:43 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:46:43 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-11-06 23:48:15 - ERROR - org.springframework.boot.SpringApplication - Application run failed
+2022-11-07 01:46:43 - ERROR - org.springframework.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.9.jar:5.3.9]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
@@ -1685,7 +1685,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:48:15 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@653e4e4b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@64619178]
+2022-11-07 01:46:43 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5de1852b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@de8423f]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.9.jar:5.3.9]
@@ -1805,7 +1805,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	... 82 common frames omitted
 ]]></system-out>
   </testcase>
-  <testcase name="testAddStockOptimized" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0">
+  <testcase name="testAddStockOptimized" classname="tn.esprit.rh.achat.StockServiceImplTest" time="0.001">
     <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
@@ -1825,13 +1825,13 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.3)
 
-2022-11-06 23:48:15 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 2972 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
-2022-11-06 23:48:15 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
-2022-11-06 23:48:15 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 23:48:15 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 10 JPA repository interfaces.
-2022-11-06 23:48:15 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 23:48:15 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-2022-11-06 23:48:37 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Exception during pool initialization.
+2022-11-07 01:46:44 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - Starting StockServiceImplTest using Java 18 on DESKTOP-8RGNV05 with PID 9960 (started by baha in C:\Users\baha\Downloads\DaassiBahaEddine)
+2022-11-07 01:46:44 - INFO  - tn.esprit.rh.achat.StockServiceImplTest - No active profile set, falling back to default profiles: default
+2022-11-07 01:46:45 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-07 01:46:45 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 10 JPA repository interfaces.
+2022-11-07 01:46:45 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 01:46:46 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2022-11-07 01:47:08 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1934,7 +1934,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:48:37 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+2022-11-07 01:47:08 - WARN  - o.h.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -2037,9 +2037,9 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 83 common frames omitted
-2022-11-06 23:48:37 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-06 23:48:38 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-2022-11-06 23:49:00 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Exception during pool initialization.
+2022-11-07 01:47:08 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-07 01:47:08 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2022-11-07 01:47:30 - ERROR - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Exception during pool initialization.
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -2141,16 +2141,16 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:49:00 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
-2022-11-06 23:49:00 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
+2022-11-07 01:47:30 - WARN  - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2022-11-07 01:47:30 - ERROR - org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2022-11-06 23:49:00 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:49:00 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-06 23:49:00 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
+2022-11-07 01:47:30 - ERROR - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:47:30 - WARN  - o.s.web.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-07 01:47:30 - INFO  - o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-11-06 23:49:00 - ERROR - org.springframework.boot.SpringApplication - Application run failed
+2022-11-07 01:47:30 - ERROR - org.springframework.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.9.jar:5.3.9]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
@@ -2265,7 +2265,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	... 82 common frames omitted
-2022-11-06 23:49:00 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@653e4e4b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@72e434fc]
+2022-11-07 01:47:30 - ERROR - org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5de1852b] to prepare test instance [tn.esprit.rh.achat.StockServiceImplTest@75024403]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.9.jar:5.3.9]
