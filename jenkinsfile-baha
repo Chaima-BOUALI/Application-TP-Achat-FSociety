@@ -55,8 +55,8 @@ pipeline{
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) {
-                   sh 'docker login -u bahadaassi -p ${dockerhubpwd}'
+		withCredentials([string(credentialsId: 'docker-pass', variable: 'dockerpass')]) {
+		                   sh 'docker login -u bahadaassi -p ${dockerpass}'
 
 }
                    sh 'docker push bahadaassi/achat'
