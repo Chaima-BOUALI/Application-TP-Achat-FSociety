@@ -65,7 +65,7 @@ pipeline {
        }
 	  stage("Building image") {
             steps {
-                sh 'docker build -t dhafer01/achat-project .'
+                sh 'docker build -t dhafer01/project-achat .'
             }
         }
         stage('Docker Login') {
@@ -77,7 +77,7 @@ pipeline {
         stage('Push') {
 
 			steps {
-				sh 'docker push dhafer01/achat-project'
+				sh 'docker push dhafer01/project-achat'
 			}
 	}
 	stage('deploy docker-compose'){
