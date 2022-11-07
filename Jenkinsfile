@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    
+	
+    environment {
+        DOCKERHUB_CREDENTIALS=credentials('dockerhub')
+    }
 
     stages {
         stage("git pull"){
@@ -60,11 +63,40 @@ pipeline {
       //    }
 
     //   }
+	  stage("Building image") {
+            steps {
+                sh 'docker build -t dhafer01/achat-project .'
+            }
+        }
+        stage('Docker Login') {
+
+			steps {
+				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
+			}
+		} 
+        stage('Push') {
+
+			steps {
+				sh 'docker push dhafer01/achat-project'
+			}
+	}
+	stage('deploy docker-compose'){
+            steps{
+                script{
+                    sh 'docker-compose up -d'
+                }
+            }
        
-        
-        
+        }    
 	
        
     }
-	
+	post {
+		always {
+			sh 'docker logout'
+		}
+	}
 } 
+       
+        
+     
