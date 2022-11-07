@@ -34,8 +34,8 @@ pipeline {
         steps{
              script{
            sh 'docker login -u "dhafer01" -p "dhafer123." docker.io'
-          sh 'docker tag project-achat:latest dhafer01/project-achat:latest'
-           sh ' docker push dhafer01/project-achat:latest'
+          sh 'docker tag project-achat dhafer01/project-achat'
+           sh ' docker push dhafer01/project-achat'
 }
 }
 }
