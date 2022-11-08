@@ -39,7 +39,6 @@ public class FactureServiceMockTest {
         }
     };
 
-    
     @Test
     public void testaddFacture(){
         Mockito.when(facRepository.save(f1)).thenReturn(f1);
