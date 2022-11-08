@@ -25,6 +25,7 @@ public class ProduitServiceImplTest {
     @Order(1)
     public void testaddProdiut() {
     	
+    	
         Produit produitAdded =  produitService.addProduit(p1);
         Assertions.assertEquals(produitAdded.getCodeProduit(), produitAdded.getCodeProduit());
     }
