@@ -24,7 +24,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Facture implements Serializable {
 	
-	
 	public Facture(Long id, float montantRemise, float montantFacture) {
 		this.idFacture = id;
 		this.montantRemise = montantRemise;
