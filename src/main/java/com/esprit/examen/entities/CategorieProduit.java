@@ -19,6 +19,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CategorieProduit implements Serializable {
+	
 
 	/**
 	 * 
