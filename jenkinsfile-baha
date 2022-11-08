@@ -48,7 +48,7 @@ pipeline{
 		   stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t bahadaassi/achat .'
+                    sh 'docker build -t bahadaassi/springprojet .'
                 }
             }
         }
@@ -59,7 +59,7 @@ pipeline{
 		                   sh 'docker login -u bahadaassi -p ${dockerpass}'
 
 }
-                   sh 'docker push bahadaassi/achat'
+                   sh 'docker push bahadaassi/springprojet'
                 }
             }
         }
